@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Google Fonts: Playfair Display (Serif header) and Inter (Clean body) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
   
@@ -42,7 +42,7 @@
   <style>
     /* Watercolor & Aquarelle Soft Cloud Effects */
     body {
-      background-color: #FAF9F6; /* Clean natural fine-art paper tint */
+      background-color: #FAF9F6;
       color: #222B45;
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
@@ -253,7 +253,6 @@
         <!-- Hero Portrait with gentle circular aura -->
         <div class="lg:col-span-5 flex justify-center lg:justify-end">
           <div class="relative group">
-            <!-- Watercolor halo circle border -->
             <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-2.5 bg-gradient-to-tr from-pink-200/50 via-white/80 to-teal-100/50 shadow-xl backdrop-blur-sm border border-white">
               <div class="w-full h-full rounded-full overflow-hidden bg-[#F5F2EB] relative flex items-center justify-center">
                 <img 
@@ -263,17 +262,8 @@
                   class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
                   onerror="handleImageFallback(this)"
                 />
-                
-                <!-- Quick upload overlay for live preview testing -->
-                <label for="avatar-file-input" class="absolute inset-0 bg-black/30 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center cursor-pointer transition-opacity text-white text-xs font-medium p-4 text-center">
-                  <i class="fa-solid fa-camera text-2xl mb-1.5"></i>
-                  <span>Click to select Bruna-Marques-Da-Silva-004.jpg</span>
-                  <span class="text-[10px] text-gray-200 mt-1">(Pre-loads into browser preview)</span>
-                  <input type="file" id="avatar-file-input" accept="image/*" class="hidden" onchange="previewSelectedImage(event)" />
-                </label>
               </div>
             </div>
-            <!-- Gentle badge -->
             <div class="absolute -bottom-2 -left-2 aquarel-card px-4 py-2 rounded-2xl border flex items-center gap-2.5 shadow-md">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
               <span class="text-xs font-medium text-brand-navy">Open to new initiatives</span>
@@ -316,7 +306,6 @@
         <!-- Minimalist Multi-Column Checkmark Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 pt-2">
           
-          <!-- Point 1 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -331,7 +320,6 @@
             </div>
           </div>
 
-          <!-- Point 2 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -346,7 +334,6 @@
             </div>
           </div>
 
-          <!-- Point 3 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -361,7 +348,6 @@
             </div>
           </div>
 
-          <!-- Point 4 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -376,7 +362,6 @@
             </div>
           </div>
 
-          <!-- Point 5 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -391,7 +376,6 @@
             </div>
           </div>
 
-          <!-- Point 6 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -406,7 +390,6 @@
             </div>
           </div>
 
-          <!-- Point 7 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -430,10 +413,7 @@
           <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold">PERSONAL</span>
         </div>
 
-        <!-- Minimalist Multi-Column Checkmark Grid for Personal -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 pt-2">
-          
-          <!-- Personal Point 1 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -448,7 +428,6 @@
             </div>
           </div>
 
-          <!-- Personal Point 2 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -463,7 +442,6 @@
             </div>
           </div>
 
-          <!-- Personal Point 3 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -478,7 +456,6 @@
             </div>
           </div>
 
-          <!-- Personal Point 4 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -493,7 +470,6 @@
             </div>
           </div>
 
-          <!-- Personal Point 5 -->
           <div class="flex items-start gap-3.5">
             <div class="mt-1 flex-shrink-0 text-brand-navy">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -507,25 +483,104 @@
               </p>
             </div>
           </div>
-
         </div>
 
-        <!-- CARD HAND GALLERY (FAN COMPONENT) INTEGRATION -->
-        <div class="pt-10">
-          <div class="max-w-5xl mx-auto">
-            <div class="aquarel-card rounded-3xl p-6 sm:p-10 border border-white/80 shadow-md">
-              <!-- Interactive Card Hand Fan Gallery Container -->
-              <div id="card-hand-gallery" class="flex w-full items-center justify-center select-none">
-                <!-- Center Fan Area -->
-                <div 
-                  id="fan-stage" 
-                  class="relative w-full max-w-2xl min-w-0 flex items-center justify-center overflow-visible"
-                  style="min-height: 430px;"
-                >
-                  <!-- Fan cards dynamically rendered by JavaScript -->
-                </div>
-              </div>
+        <!-- MINIMALIST PRODUCT CARD PHOTO COMPONENT (ZERO BLANK FLASH, SMOOTH CROSS-FADE) -->
+        <div class="pt-10 pb-6 flex justify-center">
+          <div class="w-72 sm:w-80 flex flex-col items-center">
+            
+            <div 
+              id="gallery-card-img-box"
+              class="relative aspect-[5/6] w-full rounded-[28px] overflow-hidden bg-[#F7F4EE] border border-white/90 shadow-sm cursor-pointer"
+            >
+              <!-- Layer A -->
+              <img 
+                id="gallery-card-layer-a"
+                src="1000086032.jpg" 
+                alt="Personal Photo"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                onerror="handleGalleryCardFallback(this)"
+              />
+              
+              <!-- Layer B -->
+              <img 
+                id="gallery-card-layer-b"
+                src="1000084983.jpg" 
+                alt="Personal Photo"
+                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 pointer-events-none"
+                onerror="handleGalleryCardFallback(this)"
+              />
             </div>
+
+            <!-- Minimalist Palette Dots with instant, zero-delay switching -->
+            <div class="mt-5 flex items-center justify-center gap-3">
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(0)" 
+                onmouseenter="selectGalleryTheme(0)"
+                aria-label="Watercolour Painting"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #E2A7B0;"
+              >
+                <span id="dot-ring-0" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200"></span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(1)" 
+                onmouseenter="selectGalleryTheme(1)"
+                aria-label="Bristol Harbour Walk"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #9BB8A8;"
+              >
+                <span id="dot-ring-1" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(2)" 
+                onmouseenter="selectGalleryTheme(2)"
+                aria-label="Wanderlust Embroidery"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #D69F7E;"
+              >
+                <span id="dot-ring-2" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(3)" 
+                onmouseenter="selectGalleryTheme(3)"
+                aria-label="Classic Architecture"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #E6C594;"
+              >
+                <span id="dot-ring-3" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(4)" 
+                onmouseenter="selectGalleryTheme(4)"
+                aria-label="Mediterranean Sea Arch"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #7AA0C2;"
+              >
+                <span id="dot-ring-4" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+
+              <button 
+                type="button" 
+                onclick="selectGalleryTheme(5)" 
+                onmouseenter="selectGalleryTheme(5)"
+                aria-label="Dog Amora"
+                class="theme-dot-btn relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #8C88B0;"
+              >
+                <span id="dot-ring-5" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -533,7 +588,6 @@
 
     <!-- ==================== 3. TIMELINE SECTION ==================== -->
     <section id="section-timeline" class="page-section hidden transition-opacity duration-300 space-y-8">
-      <!-- Section Header -->
       <div class="space-y-2">
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-navy font-semibold tracking-tight">Timeline</h2>
         <p class="text-sm sm:text-base text-brand-subtle max-w-2xl">
@@ -541,16 +595,13 @@
         </p>
       </div>
 
-      <!-- Timeline Roadmap Container -->
       <div class="relative pt-6 pb-8">
-        <!-- Connecting Vertical Stem Line -->
         <div class="absolute left-4 sm:left-8 top-10 bottom-10 w-[2px] bg-gradient-to-b from-[#464875]/40 via-[#B85D4D]/30 to-gray-200" aria-hidden="true"></div>
 
         <div class="space-y-10 sm:space-y-12">
 
           <!-- Milestone 1: E.ON Next (Present) -->
           <div class="relative pl-12 sm:pl-20 group">
-            <!-- Pulsing Timeline Node -->
             <div class="absolute left-2.5 sm:left-6.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-white border-[3px] border-[#464875] shadow-sm z-10 group-hover:scale-125 transition-transform duration-300">
               <span class="absolute -inset-1 rounded-full bg-[#464875]/25 animate-ping"></span>
             </div>
@@ -567,7 +618,6 @@
                   <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-brand-navy mt-1.5">Product Analyst</h3>
                 </div>
 
-                <!-- Company Link Pill -->
                 <a 
                   href="https://www.linkedin.com/company/e-on-next/posts/" 
                   target="_blank" 
@@ -583,7 +633,6 @@
                 Based in Nottingham, England, directing product support operations and Agile delivery across the Smart New Connections portfolio within Net Zero Delivery, driving operational improvement for large-scale smart meter deployments and infrastructure onboarding for housing developers nationwide. Leads external engineering partners through sprint cycles, aligning technology backlogs with core business objectives, and oversees product quality assurance and production sign-offs across enterprise architectures including Microsoft Dynamics 365. Governs core operational frameworks and data architectures for seamless site handovers, billing integrity and targeted customer-journey communications, and mitigates operational risk by designing contingency frameworks for complex system edge cases. Acts as the strategic bridge between senior leadership, operational units and third-party development teams to shape delivery roadmaps and execute short-term operational plans.
               </p>
 
-              <!-- Capability Tags -->
               <div class="pt-2 flex flex-wrap gap-2 text-xs">
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">Net Zero Delivery</span>
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">Smart New Connections</span>
@@ -596,7 +645,6 @@
 
           <!-- Milestone 2: Mindtools -->
           <div class="relative pl-12 sm:pl-20 group">
-            <!-- Timeline Node -->
             <div class="absolute left-2.5 sm:left-6.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-white border-[3px] border-[#B85D4D] shadow-sm z-10 group-hover:scale-125 transition-transform duration-300"></div>
 
             <div class="aquarel-card rounded-3xl p-6 sm:p-8 space-y-4 border border-white/90 transition-all duration-300 hover:shadow-lg">
@@ -606,7 +654,6 @@
                   <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-brand-navy mt-1">Product Owner</h3>
                 </div>
 
-                <!-- Company Link Pill -->
                 <a 
                   href="https://www.linkedin.com/company/mindtools-kineo/posts/" 
                   target="_blank" 
@@ -622,7 +669,6 @@
                 Led platform modernisation and new product development for B2B and B2C audiences, collaborating with internal teams, external partners and clients. Directed the migration of two legacy platforms for 200+ B2B clients, including SSO and controlled subscriptions, then extended the migration to 10,000+ active B2C users and a database of 50,000+, moving payments and 4,000+ content assets into a new CMS. Led the Manager Skills Assessment from ideation to launch in six months: adopted by 5% of clients in its first version, it became the second-largest B2C revenue driver for two consecutive months. Supported continuous improvements, team training, product documentation and Agile practices, earning Inspirational Leadership and Values Champion nominations.
               </p>
 
-              <!-- Capability Tags -->
               <div class="pt-2 flex flex-wrap gap-2 text-xs">
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">B2B & B2C Migration</span>
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">SSO & Subscriptions</span>
@@ -635,7 +681,6 @@
 
           <!-- Milestone 3: Dentsu World Services Brazil -->
           <div class="relative pl-12 sm:pl-20 group">
-            <!-- Timeline Node -->
             <div class="absolute left-2.5 sm:left-6.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-white border-[3px] border-gray-400 shadow-sm z-10 group-hover:scale-125 transition-transform duration-300"></div>
 
             <div class="aquarel-card rounded-3xl p-6 sm:p-8 space-y-4 border border-white/90 transition-all duration-300 hover:shadow-lg">
@@ -645,7 +690,6 @@
                   <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-brand-navy mt-1">Product Owner</h3>
                 </div>
 
-                <!-- Company Link Pill -->
                 <a 
                   href="https://www.linkedin.com/company/dentsu-world-services-brazil/posts/" 
                   target="_blank" 
@@ -661,7 +705,6 @@
                 Worked across five client projects with global, multicultural teams, translating client needs into user stories and clear acceptance criteria while leading reprioritisation and scope alignment. Delivered a multilingual platform translation, coordinating specialist validation and resolving interface challenges caused by different text lengths and structures. Supported a training and purchasing platform serving thousands of third-party vendors for a manufacturing client, and helped design and launch a documentation platform that connected archived documents into a useful knowledge system. Also mentored interns and facilitated cross-team discussions.
               </p>
 
-              <!-- Capability Tags -->
               <div class="pt-2 flex flex-wrap gap-2 text-xs">
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">Multicultural Teams</span>
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">Multilingual Localization</span>
@@ -674,7 +717,6 @@
 
           <!-- Milestone 4: ENGIE Brazil -->
           <div class="relative pl-12 sm:pl-20 group">
-            <!-- Timeline Node -->
             <div class="absolute left-2.5 sm:left-6.5 top-1.5 -translate-x-1/2 w-4 h-4 rounded-full bg-white border-[3px] border-gray-400 shadow-sm z-10 group-hover:scale-125 transition-transform duration-300"></div>
 
             <div class="aquarel-card rounded-3xl p-6 sm:p-8 space-y-4 border border-white/90 transition-all duration-300 hover:shadow-lg">
@@ -684,7 +726,6 @@
                   <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-brand-navy mt-1">Operational Middle Office / Product Owner</h3>
                 </div>
 
-                <!-- Company Link Pill -->
                 <a 
                   href="https://www.linkedin.com/company/engiebrasil/posts/" 
                   target="_blank" 
@@ -700,7 +741,6 @@
                 Combined energy consulting with digital product delivery in Brazil’s deregulated energy market. Managed 40+ energy contracts, achieving savings of up to 40% through strategic management and negotiation, and produced monthly analyses of energy costs, regulatory changes and market trends to support client decisions. Guided clients towards energy strategies aligned with ESG principles. Took on Product Owner responsibilities by leading the automation of manual monthly reporting: defining requirements, writing user stories and partnering with developers to create a more scalable, efficient reporting system. Became a finalist in a product design competition, applying Design Thinking to energy challenges.
               </p>
 
-              <!-- Capability Tags -->
               <div class="pt-2 flex flex-wrap gap-2 text-xs">
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">Energy Market Deregulation</span>
                 <span class="px-3 py-1 rounded-full bg-gray-100/80 text-brand-subtle font-medium">40+ Managed Contracts</span>
@@ -717,7 +757,6 @@
 
     <!-- ==================== 4. PROJECTS LANDING SECTION ==================== -->
     <section id="section-projects" class="page-section hidden transition-opacity duration-300 space-y-10">
-      <!-- Header -->
       <div class="space-y-2">
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-brand-navy font-semibold tracking-tight">Projects</h2>
         <p class="text-sm sm:text-base text-brand-subtle max-w-2xl">
@@ -727,79 +766,46 @@
 
       <!-- HIGHLIGHTED FEATURED PROJECT CARD: Manager Skills Assessment -->
       <div class="aquarel-card rounded-3xl p-6 sm:p-10 border border-white/90 shadow-lg relative overflow-hidden group">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#FEE5E0] text-[#B85D4D]">
-                <i class="fa-solid fa-star text-[11px]"></i> Featured Project
-              </span>
-              <span class="px-3 py-1 rounded-full text-xs bg-indigo-50 text-brand-accent font-medium">Mindtools</span>
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">SaaS • EdTech</span>
+        <div class="max-w-4xl space-y-5">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#FEE5E0] text-[#B85D4D]">
+              <i class="fa-solid fa-star text-[11px]"></i> Featured Project
+            </span>
+            <span class="px-3 py-1 rounded-full text-xs bg-indigo-50 text-brand-accent font-medium">Mindtools</span>
+            <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">SAAS • EDTECH</span>
+          </div>
+
+          <h3 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-brand-navy leading-tight">
+            Manager Skills Assessment
+          </h3>
+
+          <p class="text-brand-navy/90 text-sm sm:text-base leading-relaxed">
+            Navigating thousands of resources to find the right leadership advice is exhausting. The Manager Skills Assessment transforms an overwhelming library into a guided, intentional journey by giving managers an instant benchmark against industry standards and a personalized roadmap for growth.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 max-w-2xl">
+            <div class="p-3.5 rounded-2xl bg-white/70 border border-gray-100">
+              <span class="text-xs text-brand-subtle block font-mono">Launch Velocity</span>
+              <span class="font-serif text-lg font-semibold text-brand-navy">6 Months</span>
             </div>
-
-            <h3 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-semibold text-brand-navy leading-tight">
-              Manager Skills Assessment
-            </h3>
-
-            <p class="text-brand-navy/90 text-sm sm:text-base leading-relaxed">
-              Navigating thousands of resources to find the right leadership advice is exhausting. The Manager Skills Assessment transforms an overwhelming library into a guided, intentional journey—giving managers an instant benchmark against industry standards and a personalized roadmap for growth.
-            </p>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-              <div class="p-3 rounded-2xl bg-white/70 border border-gray-100">
-                <span class="text-xs text-brand-subtle block font-mono">Launch Velocity</span>
-                <span class="font-serif text-lg font-semibold text-brand-navy">6 Months</span>
-              </div>
-              <div class="p-3 rounded-2xl bg-white/70 border border-gray-100">
-                <span class="text-xs text-brand-subtle block font-mono">Adoption</span>
-                <span class="font-serif text-lg font-semibold text-brand-navy">5% B2B Clients</span>
-              </div>
-              <div class="p-3 rounded-2xl bg-white/70 border border-gray-100 col-span-2 sm:col-span-1">
-                <span class="text-xs text-brand-subtle block font-mono">Revenue Impact</span>
-                <span class="font-serif text-lg font-semibold text-brand-navy">#2 B2C Driver</span>
-              </div>
+            <div class="p-3.5 rounded-2xl bg-white/70 border border-gray-100">
+              <span class="text-xs text-brand-subtle block font-mono">Adoption</span>
+              <span class="font-serif text-lg font-semibold text-brand-navy">5% B2B Clients</span>
             </div>
-
-            <div class="pt-3">
-              <button 
-                onclick="navigateTo('project-skills-assessment', event)" 
-                class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#464875] text-white text-sm font-semibold hover:bg-[#393b62] shadow-sm hover:shadow transition-all group-hover:gap-3.5"
-              >
-                <span>View Project</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-              </button>
+            <div class="p-3.5 rounded-2xl bg-white/70 border border-gray-100 col-span-2 sm:col-span-1">
+              <span class="text-xs text-brand-subtle block font-mono">Revenue Impact</span>
+              <span class="font-serif text-lg font-semibold text-brand-navy">#2 B2C Driver</span>
             </div>
           </div>
 
-          <!-- Featured Project Visual -->
-          <div class="lg:col-span-5">
-            <div 
-              class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-tr from-rose-100/70 via-indigo-50/80 to-teal-50/80 border border-white p-5 shadow-inner flex flex-col justify-between"
+          <div class="pt-2">
+            <button 
+              onclick="navigateTo('project-skills-assessment', event)" 
+              class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-[#464875] text-white text-sm font-semibold hover:bg-[#393b62] shadow-sm hover:shadow transition-all group-hover:gap-3.5"
             >
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <div class="w-2.5 h-2.5 rounded-full bg-rose-400"></div>
-                  <div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
-                  <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
-                </div>
-                <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle bg-white/70 px-2 py-0.5 rounded-md">Live Platform</span>
-              </div>
-
-              <!-- Graphical Illustration of Assessment Radar & Card -->
-              <div class="my-auto py-2 flex flex-col items-center justify-center text-center space-y-3">
-                <div class="w-20 h-20 rounded-2xl bg-white/90 shadow-md flex items-center justify-center text-brand-accent">
-                  <i class="fa-solid fa-chart-pie text-3xl"></i>
-                </div>
-                <div class="space-y-1">
-                  <p class="font-serif font-semibold text-brand-navy text-base">Personalized Skill Benchmark</p>
-                  <p class="text-xs text-brand-subtle max-w-xs">Dynamic radar mapping leadership strengths into tailored micro-learning pathways</p>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-start text-xs text-brand-subtle border-t border-white/60 pt-2 font-mono">
-                <span>Assessment • Roadmap</span>
-              </div>
-            </div>
+              <span>View Project</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -812,31 +818,25 @@
           <!-- Project 2: E.ON Debt Management System -->
           <div 
             onclick="navigateTo('project-eon-dms', event)"
-            class="aquarel-card rounded-3xl p-6 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            class="aquarel-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
           >
-            <div class="space-y-4">
-              <!-- Visual Header -->
-              <div class="w-full aspect-[16/10] rounded-2xl bg-gradient-to-tr from-emerald-100/60 via-teal-50 to-white border border-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden group-hover:border-emerald-200 transition-colors">
-                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-emerald-700 text-xl mb-2 group-hover:scale-110 transition-transform">
-                  <i class="fa-solid fa-diagram-project"></i>
-                </div>
-                <span class="text-xs font-mono font-medium text-emerald-800">E.ON Smart New Connections</span>
-                <span class="text-[11px] text-brand-subtle mt-0.5">Automated Validation & DMS</span>
-              </div>
-
+            <div class="space-y-3">
               <div>
-                <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">E.ON Next • Energy Operations</span>
+                <div class="flex items-center gap-2 flex-wrap mb-2">
+                  <span class="px-3 py-1 rounded-full text-xs bg-indigo-50 text-brand-accent font-medium">E.ON Next</span>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">Energy Operations</span>
+                </div>
                 <h4 class="font-serif text-xl font-semibold text-brand-navy mt-1 group-hover:text-brand-accent transition-colors">
                   Debt Management System (DMS)
                 </h4>
               </div>
 
-              <p class="text-sm text-brand-subtle line-clamp-3 leading-relaxed">
+              <p class="text-sm text-brand-subtle leading-relaxed">
                 Pivoting automated debt collection for housing developers by uncovering frontline compliance gaps, prototyping validation flows, and introducing lightweight PRDs.
               </p>
             </div>
 
-            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-4">
+            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-6">
               <span class="text-brand-subtle font-medium">Operational Discovery</span>
               <span class="text-brand-accent font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                 View Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -847,31 +847,25 @@
           <!-- Project 3: Culligan E-Commerce -->
           <div 
             onclick="navigateTo('project-culligan', event)"
-            class="aquarel-card rounded-3xl p-6 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            class="aquarel-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
           >
-            <div class="space-y-4">
-              <!-- Visual Header -->
-              <div class="w-full aspect-[16/10] rounded-2xl bg-gradient-to-tr from-sky-100/60 via-blue-50 to-white border border-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden group-hover:border-sky-200 transition-colors">
-                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-sky-700 text-xl mb-2 group-hover:scale-110 transition-transform">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <span class="text-xs font-mono font-medium text-sky-800">Culligan UK</span>
-                <span class="text-[11px] text-brand-subtle mt-0.5">Commercial E-Commerce Platform</span>
-              </div>
-
+            <div class="space-y-3">
               <div>
-                <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">Dentsu World Services • Agency Delivery</span>
+                <div class="flex items-center gap-2 flex-wrap mb-2">
+                  <span class="px-3 py-1 rounded-full text-xs bg-indigo-50 text-brand-accent font-medium">Dentsu World Services</span>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">Agency Delivery</span>
+                </div>
                 <h4 class="font-serif text-xl font-semibold text-brand-navy mt-1 group-hover:text-brand-accent transition-colors">
                   Commercial E-Commerce Platform
                 </h4>
               </div>
 
-              <p class="text-sm text-brand-subtle line-clamp-3 leading-relaxed">
+              <p class="text-sm text-brand-subtle leading-relaxed">
                 Delivering a localized commercial catalog with API pricing integrations under fixed agency budget, timeline, and data constraints.
               </p>
             </div>
 
-            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-4">
+            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-6">
               <span class="text-brand-subtle font-medium">SEO & API Catalog</span>
               <span class="text-brand-accent font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                 View Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -882,31 +876,25 @@
           <!-- Project 4: Brazilian Energy Market Automation -->
           <div 
             onclick="navigateTo('project-energy-automation', event)"
-            class="aquarel-card rounded-3xl p-6 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+            class="aquarel-card rounded-3xl p-6 sm:p-7 flex flex-col justify-between border border-white/80 hover:shadow-lg transition-all duration-300 cursor-pointer group"
           >
-            <div class="space-y-4">
-              <!-- Visual Header -->
-              <div class="w-full aspect-[16/10] rounded-2xl bg-gradient-to-tr from-amber-100/60 via-orange-50 to-white border border-gray-100 flex flex-col items-center justify-center p-4 relative overflow-hidden group-hover:border-amber-200 transition-colors">
-                <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-amber-700 text-xl mb-2 group-hover:scale-110 transition-transform">
-                  <i class="fa-solid fa-bolt-lightning"></i>
-                </div>
-                <span class="text-xs font-mono font-medium text-amber-800">ENGIE Brazil</span>
-                <span class="text-[11px] text-brand-subtle mt-0.5">Spot Market & Reporting Automation</span>
-              </div>
-
+            <div class="space-y-3">
               <div>
-                <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">ENGIE Brazil • Operations to PM</span>
+                <div class="flex items-center gap-2 flex-wrap mb-2">
+                  <span class="px-3 py-1 rounded-full text-xs bg-indigo-50 text-brand-accent font-medium">ENGIE Brazil</span>
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-brand-subtle font-medium">Operations to PM</span>
+                </div>
                 <h4 class="font-serif text-xl font-semibold text-brand-navy mt-1 group-hover:text-brand-accent transition-colors">
                   Energy Market Automation
                 </h4>
               </div>
 
-              <p class="text-sm text-brand-subtle line-clamp-3 leading-relaxed">
+              <p class="text-sm text-brand-subtle leading-relaxed">
                 Transitioning from manual month-end Excel calculations to structured technical requirements, automating 40% of the operational workflow.
               </p>
             </div>
 
-            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-4">
+            <div class="pt-5 border-t border-gray-100/80 flex items-center justify-between text-xs mt-6">
               <span class="text-brand-subtle font-medium">Discovery & Velocity</span>
               <span class="text-brand-accent font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                 View Project <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -919,7 +907,6 @@
 
     <!-- ==================== 4.1 PROJECT DETAIL: MANAGER SKILLS ASSESSMENT ==================== -->
     <section id="section-project-skills-assessment" class="page-section hidden transition-opacity duration-300 space-y-10">
-      <!-- Breadcrumb / Back Navigation -->
       <div class="flex items-center justify-between border-b border-gray-100 pb-4">
         <button onclick="navigateTo('projects', event)" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-accent hover:text-[#393b62]">
           <i class="fa-solid fa-arrow-left"></i>
@@ -928,7 +915,6 @@
         <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">Project • Mindtools</span>
       </div>
 
-      <!-- Hero Header -->
       <div class="space-y-4">
         <div class="flex items-center gap-2 flex-wrap">
           <span class="px-3.5 py-1 rounded-full text-xs font-semibold bg-[#FEE5E0] text-[#B85D4D]">Featured Project</span>
@@ -937,91 +923,256 @@
         <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-navy">
           Manager Skills Assessment
         </h1>
-        <p class="text-brand-subtle text-base sm:text-lg max-w-3xl leading-relaxed">
-          Transforming an overwhelming library of thousands of leadership resources into an instant, benchmarked diagnostic and personalized growth roadmap.
-        </p>
       </div>
 
-      <!-- Banner / Visual Showcase -->
-      <div class="aquarel-card rounded-3xl p-8 border border-white bg-gradient-to-br from-white/90 via-rose-50/30 to-indigo-50/30 shadow-md">
-        <div class="max-w-2xl mx-auto text-center space-y-3">
-          <div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-brand-accent text-2xl mx-auto">
-            <i class="fa-solid fa-compass-drafting"></i>
-          </div>
-          <h3 class="font-serif text-xl font-semibold text-brand-navy">Product Showcase Banner</h3>
-          <p class="text-xs sm:text-sm text-brand-subtle leading-relaxed">
-            The Manager Skills Assessment interface bridges standalone diagnostic scoring with Mindtools' extensive library of articles, videos, and toolkits.
-          </p>
-        </div>
-      </div>
-
-      <!-- Core Context & Narrative -->
-      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
-        <h3 class="font-serif text-2xl font-semibold text-brand-navy">Executive Overview</h3>
+      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-8 border border-white">
+        <!-- Opening Paragraph -->
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
-          Navigating thousands of resources to find the right leadership advice is exhausting. At Mindtools, we were already a trusted learning partner for organizations, but we realized our corporate clients were doing all the heavy lifting—manually curating our vast toolkit to help their leaders grow. When we shifted our focus directly toward empowering managers, we saw an opportunity to bridge this gap. We created the Manager Skills Assessment to give managers an instant benchmark against industry standards and a personalized roadmap for growth. Beyond serving as a standalone product with high market value, it transformed our platform: turning an overwhelming library of content into a guided, intentional journey from day one.
+          Think about the last few digital apps you downloaded. How many of them opened with a quick assessment the very first time you logged in? Modern digital products, especially those focused on driving behavior change, such as fitness or wellbeing platforms, rely heavily on initial assessments to establish a baseline and deliver tailored personalization. The Manager Skills Assessment was built on this exact principle. Sitting right at the intersection of Mindtools' product vision and business strategy, it transforms how users navigate our ecosystem. Instead of dropping users into an overwhelming library, the assessment acts as a personalized compass that boosts engagement and guides their growth journey from day one. At the same time, it serves as a high-value standalone product that opens new enterprise sales opportunities while taking the heavy lifting of content curation off the shoulders of HR and L&D teams.
         </p>
 
-        <!-- Role & Contributions Box -->
-        <div class="p-6 rounded-2xl bg-white/70 border border-gray-100 space-y-3">
-          <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold block">My Role • Lead Product Manager</span>
-          <p class="text-sm text-brand-navy/90 font-medium">Defined the product vision and roadmap to bridge the gap between our assessment tool and our core content library.</p>
-          <ul class="space-y-2 text-sm text-brand-subtle">
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-brand-accent mt-1 text-xs"></i>
-              <span>Uncovered key friction points in how managers consumed learning materials through user research and market analysis.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-brand-accent mt-1 text-xs"></i>
-              <span>Designed the user journey to ensure managers received instant, actionable feedback and clear next steps rather than static scores.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-brand-accent mt-1 text-xs"></i>
-              <span>Positioned the tool both as an entry point for platform onboarding and as a standalone product ready for market monetization.</span>
-            </li>
-          </ul>
+        <!-- Product Offering External Links (B2B and B2C) -->
+        <div class="pt-1 pb-2">
+          <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold block mb-3">Live Product Offerings</span>
+          <div class="flex flex-wrap items-center gap-3">
+            <a 
+              href="https://mindtools-kineo.com/products-services/performance-enablement/manager-skills-assessment" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/95 hover:bg-white text-brand-navy text-xs sm:text-sm font-medium border border-gray-200/90 hover:border-gray-300 shadow-xs hover:shadow transition-all group/b2b"
+            >
+              <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+              <span>B2B Enterprise Offering</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[11px] text-brand-accent transition-transform group-hover/b2b:-translate-y-0.5 group-hover/b2b:translate-x-0.5"></i>
+            </a>
+
+            <a 
+              href="https://store.mindtools.com/products/manager-skills-assessment?variant=50051511812388" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/95 hover:bg-white text-brand-navy text-xs sm:text-sm font-medium border border-gray-200/90 hover:border-gray-300 shadow-xs hover:shadow transition-all group/b2c"
+            >
+              <span class="w-2 h-2 rounded-full bg-rose-400"></span>
+              <span>B2C Store Offering</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[11px] text-[#B85D4D] transition-transform group-hover/b2c:-translate-y-0.5 group-hover/b2c:translate-x-0.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- MY ROLE SECTION -->
+        <div class="space-y-6 pt-2">
+          <div class="border-b border-gray-200/80 pb-2">
+            <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold">MY ROLE</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">User Research & Friction Discovery</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Engage on the discovery of key friction points in how managers consumed learning materials through user research and market analysis.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Actionable Journey Design</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Designed the user journey to ensure managers received instant, actionable feedback and clear next steps rather than static scores.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Iterative MVP Staging</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Defined the product stages starting with an MVP to collect early bird adopters feedback and iterating for future stages.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Vision & Content Bridge</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Defined the product vision and roadmap to bridge the gap between our assessment tool and our core content library.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Supplier & Tool Governance</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Selected the third party tool to provide the assessment feature within Mindtools requirements and terms and managed the supplier relationship.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Onboarding & Monetization</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Positioned the tool both as an entry point for platform onboarding and as a standalone product ready for market monetization.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Strategic Impact & Video Embed Section -->
-      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
-        <h3 class="font-serif text-2xl font-semibold text-brand-navy">Strategic Impact & Portfolio Fit</h3>
-        <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
-          Think about the last few digital apps you downloaded. How many of them opened with a quick assessment the very first time you logged in? Modern digital products—especially those focused on driving behavior change, such as fitness or wellbeing platforms—rely heavily on initial assessments to establish a baseline and deliver tailored personalization. The Manager Skills Assessment was built on this exact principle. Sitting right at the intersection of Mindtools' product vision and business strategy, it transforms how users navigate our ecosystem. Instead of dropping users into an overwhelming library, the assessment acts as a personalized compass that boosts engagement and guides their growth journey from day one. At the same time, it serves as a high-value standalone product that opens new enterprise sales opportunities while taking the heavy lifting of content curation off the shoulders of HR and L&D teams.
-        </p>
-
-        <!-- Video Embed Mockup -->
-        <div class="rounded-2xl border border-gray-200/80 bg-white/80 p-8 flex flex-col items-center justify-center text-center space-y-3">
-          <div class="w-14 h-14 rounded-full bg-[#464875] text-white flex items-center justify-center text-lg shadow-md cursor-pointer hover:scale-105 transition-transform">
-            <i class="fa-solid fa-play ml-1"></i>
-          </div>
-          <span class="text-sm font-serif font-semibold text-brand-navy">Video Embed: Overview of the Mindtools Product Portfolio</span>
-          <p class="text-xs text-brand-subtle max-w-md">
-            To get a better sense of how the Manager Skills Assessment connects with our core platform, watch the quick product overview to see how it guides the overall user journey.
-          </p>
+      <!-- ==================== SEE MORE SECTION ==================== -->
+      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-12 border border-white">
+        <!-- Section Header -->
+        <div class="text-center sm:text-left">
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-brand-navy">See more</h2>
         </div>
 
-        <!-- LinkedIn Announcement Post Mockup -->
-        <div class="p-6 rounded-2xl bg-blue-50/40 border border-blue-100 space-y-3">
-          <div class="flex items-center gap-2">
-            <i class="fa-brands fa-linkedin text-blue-700 text-lg"></i>
-            <span class="text-xs font-mono uppercase tracking-wider text-blue-900 font-semibold">LinkedIn Announcement Post</span>
+        <!-- 1. Vimeo Video Embed with Sub-sentence -->
+        <div class="space-y-4">
+          <div class="border-b border-gray-200/80 pb-2">
+            <p class="font-serif text-xl sm:text-2xl text-brand-navy font-medium italic">
+              Your data-driven path to managerial success
+            </p>
           </div>
-          <div class="font-sans text-xs sm:text-sm text-brand-navy/90 space-y-2 bg-white/80 p-4 rounded-xl border border-blue-50">
-            <p><strong>Exciting news from the Mindtools team!</strong></p>
-            <p>Being a manager is tough. Knowing what skills to focus on next? Sometimes even tougher.</p>
-            <p>We kept hearing the same thing from the leaders using our platform: <em>"You have an incredible library of content, but I don't know where to start."</em> Meanwhile, L&D teams were spending hours manually curating learning paths for their managers.</p>
-            <p>So, we built a solution: <strong>The Manager Skills Assessment</strong>.</p>
-            <p>In just a few minutes, managers can benchmark their leadership skills against industry standards and receive a clear, personalized roadmap of what to read, watch, or practice next. No more scrolling endlessly through content—just clear, actionable guidance tailored to where they are right now.</p>
-            <p class="text-brand-accent">I'm super proud of what our team built here. Check it out and let me know your thoughts!</p>
+
+          <div class="w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-lg border border-white/90 bg-black aspect-video relative">
+            <iframe 
+              title="vimeo-player" 
+              src="https://player.vimeo.com/video/1035564879?h=40e38842a4" 
+              class="w-full h-full absolute inset-0"
+              frameborder="0" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
+
+        <!-- 2. Interactive Product Image Carousel (Same Design as About Me) -->
+        <div class="space-y-4 pt-4">
+          <div class="pt-4 pb-4 flex justify-center">
+            <div class="w-full max-w-2xl flex flex-col items-center">
+              
+              <!-- Rounded Image Box with Dual-Layer Cross-Fade -->
+              <div 
+                class="relative aspect-[16/10] w-full rounded-[28px] overflow-hidden bg-[#F7F4EE] border border-white/90 shadow-md"
+              >
+                <!-- Layer A -->
+                <img 
+                  id="msa-carousel-layer-a"
+                  src="Gemini_Generated_Image_a3s9a3s9a3s9a3s9.jpeg" 
+                  alt="Manager Skills Assessment Preview"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100"
+                  onerror="handleMsaCarouselFallback(this)"
+                />
+                
+                <!-- Layer B -->
+                <img 
+                  id="msa-carousel-layer-b"
+                  src="Gemini_Generated_Image_3yolxz3yolxz3yol.jpeg" 
+                  alt="Manager Skills Assessment Preview"
+                  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 pointer-events-none"
+                  onerror="handleMsaCarouselFallback(this)"
+                />
+              </div>
+
+              <!-- Palette Dots to switch between the 3 images -->
+              <div class="mt-5 flex items-center justify-center gap-3">
+                <!-- Dot 0: Teal (Mindtools Brand) -->
+                <button 
+                  type="button" 
+                  onclick="selectMsaTheme(0)" 
+                  onmouseenter="selectMsaTheme(0)"
+                  aria-label="Mindtools Assessment Banner"
+                  class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                  style="background-color: #38A3A5;"
+                >
+                  <span id="msa-dot-ring-0" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200"></span>
+                </button>
+
+                <!-- Dot 1: Purple (Management Insights Spider Graph) -->
+                <button 
+                  type="button" 
+                  onclick="selectMsaTheme(1)" 
+                  onmouseenter="selectMsaTheme(1)"
+                  aria-label="Management Insights Radar"
+                  class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                  style="background-color: #6C5CE7;"
+                >
+                  <span id="msa-dot-ring-1" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+                </button>
+
+                <!-- Dot 2: Magenta (Emotional Intelligence Scoring) -->
+                <button 
+                  type="button" 
+                  onclick="selectMsaTheme(2)" 
+                  onmouseenter="selectMsaTheme(2)"
+                  aria-label="Emotional Intelligence Pillars"
+                  class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                  style="background-color: #D63384;"
+                >
+                  <span id="msa-dot-ring-2" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. LinkedIn Announcement Post Embed -->
+        <div class="space-y-4 pt-4">
+          <div class="flex justify-center pt-2">
+            <div class="w-full max-w-[504px] overflow-hidden rounded-2xl shadow-md border border-gray-200 bg-white">
+              <iframe 
+                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7255564491545890818?collapsed=1" 
+                height="1207" 
+                width="504" 
+                frameborder="0" 
+                allowfullscreen="" 
+                title="Embedded post">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ==================== 4.2 PROJECT DETAIL: E.ON DEBT MANAGEMENT SYSTEM ==================== -->
     <section id="section-project-eon-dms" class="page-section hidden transition-opacity duration-300 space-y-10">
-      <!-- Breadcrumb / Back Navigation -->
       <div class="flex items-center justify-between border-b border-gray-100 pb-4">
         <button onclick="navigateTo('projects', event)" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-accent hover:text-[#393b62]">
           <i class="fa-solid fa-arrow-left"></i>
@@ -1030,7 +1181,6 @@
         <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">Project • E.ON Next</span>
       </div>
 
-      <!-- Hero Header -->
       <div class="space-y-4">
         <div class="flex items-center gap-2 flex-wrap">
           <span class="px-3 py-1 rounded-full text-xs bg-emerald-50 text-emerald-800 font-semibold border border-emerald-200/50">Net Zero Delivery</span>
@@ -1039,72 +1189,136 @@
         <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-brand-navy">
           E.ON Debt Management System (DMS)
         </h1>
-        <p class="text-brand-subtle text-base sm:text-lg max-w-3xl leading-relaxed">
-          Automating debt recovery for nationwide developer accounts while embedding system validations into frontline agent workflows.
-        </p>
       </div>
 
-      <!-- Content -->
-      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
-        <h3 class="font-serif text-2xl font-semibold text-brand-navy">Operational Context & The Dilemma</h3>
+      <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-8 border border-white">
+        <!-- Paragraph 1 -->
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
-          At E.ON Smart New Connections, a historical backlog of unpaid bills from housing developers created a significant debt book. While unpaid invoices mounted, stopping meter installations wasn't an option: installing meters was crucial for meeting UK government smart meter rollout targets and securing future residential customers. However, handling debt collection manually was out of the question since it would have overwhelmed support teams and degraded service quality. The solution was an automated Debt Management System (DMS) designed to identify, collect, and manage payment plans automatically.
+          At E.ON Smart New Connections, a historical backlog of unpaid bills from housing developers created a
+          significant debt book. While unpaid invoices mounted, stopping meter installations wasn't an option: installing
+          meters was crucial for meeting UK government smart meter rollout targets and securing future residential
+          customers. However, handling debt collection manually was out of the question since it would have overwhelmed
+          support teams and degraded service quality. The solution was an automated Debt Management System (DMS)
+          designed to identify, collect, and manage payment plans automatically.
+          DMS MVP1 identified debt and established automated 1-to-3-month
+          payment plans. The diagram below provides a high-level view of the customer journeys implemented in DMS
+          MVP1.
         </p>
 
-        <!-- Customer Journey Diagram Placeholder -->
-        <div class="p-6 rounded-2xl bg-white/80 border border-gray-100 text-center space-y-2">
-          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mx-auto text-lg">
-            <i class="fa-solid fa-route"></i>
+        <!-- Customer Journeys Diagram Image -->
+        <div class="w-full rounded-2xl overflow-hidden border border-gray-200/80 bg-white shadow-sm">
+          <img 
+            src="Gemini_Generated_Image_9xoymz9xoymz9xoy (1).jpeg" 
+            alt="DMS MVP1 Customer Journeys (Simplified Overview)" 
+            class="w-full h-auto object-contain select-none"
+            onerror="this.onerror=null; this.src='Gemini_Generated_Image_9xoymz9xoymz9xoy.jpeg';"
+          />
+        </div>
+
+        <!-- Paragraph 2 -->
+        <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
+          I joined just after MVP1 launched and received the requirements for MVP2. They focused on automating plan confirmations, payment reminders, and
+          escalation paths. However, during early discovery, I uncovered a critical gap: phone support agents were regularly
+          agreeing to payment plans that breached official E.ON terms, severely weakening recovery rates. Recognizing the risk,
+          I pivoted team priorities to build automated system validations into the agent workflow first. Following this, I
+          prototyped the automated confirmation flow (using Canvas in Gemini) and launched both confirmation and reminder
+          email journeys, ultimately boosting collection effectiveness while keeping agent workload at zero.
+        </p>
+
+        <!-- MY ROLE SECTION (Matching MSA design) -->
+        <div class="space-y-6 pt-2">
+          <div class="border-b border-gray-200/80 pb-2">
+            <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold">MY ROLE</span>
           </div>
-          <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle block font-semibold">DMS MVP1 Customer Journeys (Simplified Flow)</span>
-          <p class="text-xs text-brand-subtle max-w-md mx-auto">
-            Identifies developer accounts in arrears and orchestrates automated 1-to-3-month installment plans synchronized with meter commissioning milestones.
-          </p>
-        </div>
 
-        <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
-          The initial MVP2 requirements presented to me focused on automating plan confirmations, payment reminders, and escalation paths. However, during early discovery, I uncovered a critical gap: phone support agents were regularly agreeing to payment plans that breached official E.ON terms, severely weakening recovery rates. Recognizing the risk, I pivoted team priorities to build automated system validations into the agent workflow first. Following this, I prototyped the automated confirmation flow (using Canvas in Gemini) and launched both confirmation and reminder email journeys, ultimately boosting collection effectiveness while keeping agent workload at zero.
-        </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Operational Discovery</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Conducted operational discovery that exposed core compliance gaps in manual agent workflows.
+                </p>
+              </div>
+            </div>
 
-        <!-- Role Box -->
-        <div class="p-6 rounded-2xl bg-white/70 border border-gray-100 space-y-3">
-          <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold block">My Role • Lead Product Manager</span>
-          <ul class="space-y-2 text-sm text-brand-subtle">
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-emerald-600 mt-1 text-xs"></i>
-              <span>Conducted operational discovery that exposed core compliance gaps in manual agent workflows.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-emerald-600 mt-1 text-xs"></i>
-              <span>Reprioritized the product roadmap to address root-cause collection failures before introducing downstream automation.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-emerald-600 mt-1 text-xs"></i>
-              <span>Designed and prototyped the automated email confirmation flow using Canvas in Gemini.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-emerald-600 mt-1 text-xs"></i>
-              <span>Worked closely with the operational readiness team to ensure training materials were comprehensive, updated, and clear technical support channels were established for support teams.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i class="fa-solid fa-check text-emerald-600 mt-1 text-xs"></i>
-              <span>Managed scope trade-offs, reallocating engineering capacity toward high-impact validation controls while deferring lower-priority escalation features.</span>
-            </li>
-          </ul>
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Roadmap Reprioritization</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Reprioritized the product roadmap to address root-cause collection failures before introducing downstream automation.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Journey Prototyping</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Designed and prototyped the automated email confirmation flow using Canvas in Gemini.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Operational Readiness</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Worked closely with the operational readiness team to ensure training materials were comprehensive, updated, and clear technical support channels were established for support teams.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="mt-1 flex-shrink-0 text-brand-navy">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="space-y-1.5">
+                <h3 class="text-sm font-semibold text-brand-navy leading-snug">Scope & Capacity Governance</h3>
+                <p class="text-xs sm:text-[13px] text-brand-subtle leading-relaxed">
+                  Managed scope trade-offs, reallocating engineering capacity toward high-impact validation controls while deferring lower-priority escalation features.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Introducing PRDs -->
       <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
         <h3 class="font-serif text-2xl font-semibold text-brand-navy">Improving Ways of Working: Introducing Product Requirement Documents (PRDs)</h3>
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
-          The Debt Management System was my first project at E.ON, and I quickly identified opportunities to improve how we defined and delivered product requirements. In MVP1, requirements were communicated primarily through complex Miro boards. While visual, this left the team without a single source of truth or clear scope boundaries—generating friction and leaving edge cases unanswered when I onboarded.
+          The Debt Management System was my first project at E.ON, and I quickly identified opportunities to improve how we defined and delivered product requirements. In MVP1, requirements were communicated primarily through complex Miro boards. While visual, this left the team without a single source of truth or clear scope boundaries generating friction and leaving edge cases unanswered when I onboarded.
         </p>
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
           To solve this, I introduced structured Product Requirement Documents (PRDs). Striking the right balance was essential: documentation should never become a bottleneck that delays execution, but the process of writing requirements forces critical thinking and uncovers overlooked questions early. Because the team was new to PRDs, I purposefully introduced a lightweight, approachable template to drive adoption without adding heavy process overhead.
         </p>
 
-        <!-- Impact Callout -->
+        <!-- Subtitle: Feedback upon adoption -->
+        <div class="pt-2">
+          <h4 class="font-serif text-lg sm:text-xl font-semibold text-brand-navy">Feedback upon adoption</h4>
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs sm:text-sm">
           <div class="p-4 rounded-2xl bg-white/80 border border-gray-100 space-y-1">
             <span class="font-semibold text-brand-navy block">Engineering Impact</span>
@@ -1120,7 +1334,6 @@
           </div>
         </div>
 
-        <!-- PRD Template Box -->
         <div class="p-5 rounded-2xl bg-gray-50 border border-gray-200/80 space-y-2">
           <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold block">PRD Structure Sample</span>
           <pre class="font-mono text-xs text-brand-navy whitespace-pre-wrap leading-relaxed">Product Requirement Document | Initiative Name
@@ -1136,7 +1349,6 @@ Status: Draft | Owner: Bruna Marques
 
     <!-- ==================== 4.3 PROJECT DETAIL: CULLIGAN E-COMMERCE ==================== -->
     <section id="section-project-culligan" class="page-section hidden transition-opacity duration-300 space-y-10">
-      <!-- Breadcrumb / Back Navigation -->
       <div class="flex items-center justify-between border-b border-gray-100 pb-4">
         <button onclick="navigateTo('projects', event)" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-accent hover:text-[#393b62]">
           <i class="fa-solid fa-arrow-left"></i>
@@ -1145,7 +1357,6 @@ Status: Draft | Owner: Bruna Marques
         <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">Project • Dentsu World Services</span>
       </div>
 
-      <!-- Hero Header -->
       <div class="space-y-4">
         <div class="flex items-center gap-2 flex-wrap">
           <span class="px-3 py-1 rounded-full text-xs bg-sky-50 text-sky-800 font-semibold border border-sky-200/50">E-Commerce & SEO</span>
@@ -1159,7 +1370,6 @@ Status: Draft | Owner: Bruna Marques
         </p>
       </div>
 
-      <!-- Narrative -->
       <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
         <h3 class="font-serif text-2xl font-semibold text-brand-navy">Execution Under Constraints</h3>
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
@@ -1170,7 +1380,6 @@ Status: Draft | Owner: Bruna Marques
         </p>
       </div>
 
-      <!-- Agency vs In-House Insight -->
       <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
         <h3 class="font-serif text-2xl font-semibold text-brand-navy">Product Insight: Navigating Project-Based Agencies vs. In-House Product Management</h3>
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
@@ -1190,7 +1399,6 @@ Status: Draft | Owner: Bruna Marques
 
     <!-- ==================== 4.4 PROJECT DETAIL: BRAZILIAN ENERGY MARKET AUTOMATION ==================== -->
     <section id="section-project-energy-automation" class="page-section hidden transition-opacity duration-300 space-y-10">
-      <!-- Breadcrumb / Back Navigation -->
       <div class="flex items-center justify-between border-b border-gray-100 pb-4">
         <button onclick="navigateTo('projects', event)" class="inline-flex items-center gap-2 text-xs font-semibold text-brand-accent hover:text-[#393b62]">
           <i class="fa-solid fa-arrow-left"></i>
@@ -1199,7 +1407,6 @@ Status: Draft | Owner: Bruna Marques
         <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle">Project • ENGIE Brazil</span>
       </div>
 
-      <!-- Hero Header -->
       <div class="space-y-4">
         <div class="flex items-center gap-2 flex-wrap">
           <span class="px-3 py-1 rounded-full text-xs bg-amber-50 text-amber-800 font-semibold border border-amber-200/50">Digital Transformation</span>
@@ -1213,7 +1420,6 @@ Status: Draft | Owner: Bruna Marques
         </p>
       </div>
 
-      <!-- Narrative -->
       <div class="aquarel-card rounded-3xl p-6 sm:p-10 space-y-6 border border-white">
         <h3 class="font-serif text-2xl font-semibold text-brand-navy">The Origin: Bridging Operations & Engineering</h3>
         <p class="text-sm sm:text-[15px] text-brand-navy/90 leading-relaxed">
@@ -1254,7 +1460,6 @@ Status: Draft | Owner: Bruna Marques
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Degree -->
         <div class="aquarel-card rounded-3xl p-6 sm:p-8">
           <div class="w-10 h-10 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-700 text-lg mb-4">
             <i class="fa-solid fa-graduation-cap"></i>
@@ -1267,7 +1472,6 @@ Status: Draft | Owner: Bruna Marques
           <p class="text-xs text-brand-navy font-medium"><i class="fa-solid fa-award text-amber-600 mr-1.5"></i>Graduated with Distinction in Numerical Modeling</p>
         </div>
 
-        <!-- CSPO -->
         <div class="aquarel-card rounded-3xl p-6 sm:p-8">
           <div class="w-10 h-10 rounded-2xl bg-indigo-50 flex items-center justify-center text-brand-accent text-lg mb-4">
             <i class="fa-solid fa-certificate"></i>
@@ -1280,7 +1484,6 @@ Status: Draft | Owner: Bruna Marques
           <p class="text-xs text-brand-navy font-medium"><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i>Active Credential & Ongoing Community Mentorship</p>
         </div>
 
-        <!-- Continuous Learning -->
         <div class="aquarel-card rounded-3xl p-6 sm:p-8 md:col-span-2">
           <h3 class="font-serif text-xl font-medium text-brand-navy mb-4">Selected Workshops & Continuous Growth</h3>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
@@ -1309,7 +1512,6 @@ Status: Draft | Owner: Bruna Marques
       </div>
 
       <div class="space-y-4">
-        <!-- Contribution Card 1 -->
         <div class="aquarel-card rounded-2xl p-6 sm:p-7 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div class="space-y-1">
             <div class="flex items-center gap-2">
@@ -1324,7 +1526,6 @@ Status: Draft | Owner: Bruna Marques
           </button>
         </div>
 
-        <!-- Contribution Card 2 -->
         <div class="aquarel-card rounded-2xl p-6 sm:p-7 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div class="space-y-1">
             <div class="flex items-center gap-2">
@@ -1339,7 +1540,6 @@ Status: Draft | Owner: Bruna Marques
           </button>
         </div>
 
-        <!-- Contribution Card 3 -->
         <div class="aquarel-card rounded-2xl p-6 sm:p-7 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div class="space-y-1">
             <div class="flex items-center gap-2">
@@ -1364,7 +1564,6 @@ Status: Draft | Owner: Bruna Marques
   </footer>
 
   <script>
-    // List of active sections
     const VALID_ROUTES = [
       'home', 
       'about', 
@@ -1379,37 +1578,10 @@ Status: Draft | Owner: Bruna Marques
     ];
 
     function handleImageFallback(imgElement) {
-      // Check if user previously loaded their image into browser storage
-      const savedPhoto = localStorage.getItem('pm_portfolio_custom_avatar');
-      if (savedPhoto) {
-        imgElement.src = savedPhoto;
-        return;
-      }
-
-      // Elegant SVG silhouette representing Bruna with curly hair and denim jacket styling
       const svgFallback = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"><rect width="400" height="400" fill="%23FAF7F2"/><circle cx="200" cy="155" r="58" fill="%23E8B89C"/><path d="M125 155 Q130 90 200 90 Q270 90 275 155 Q275 190 265 220 Q240 230 200 230 Q160 230 135 220 Z" fill="%233A271E"/><circle cx="200" cy="165" r="50" fill="%23F3C6AA"/><path d="M140 130 Q150 90 200 90 Q250 90 260 130 Q275 160 270 200 Q255 170 245 155 Q200 130 155 155 Q145 175 130 200 Q125 160 140 130 Z" fill="%233A271E"/><path d="M110 370 C110 280 150 255 200 255 C250 255 290 280 290 370 Z" fill="%232D4C6B"/><path d="M165 255 L200 290 L235 255 Z" fill="%23DFE3E6"/><path d="M180 185 Q200 202 220 185" stroke="%23C2514D" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="178" cy="155" r="4.5" fill="%233A271E"/><circle cx="222" cy="155" r="4.5" fill="%233A271E"/></svg>`;
       imgElement.src = svgFallback;
     }
 
-    function previewSelectedImage(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          const img = document.getElementById('hero-avatar-img');
-          img.src = e.target.result;
-          try {
-            localStorage.setItem('pm_portfolio_custom_avatar', e.target.result);
-          } catch(err) {
-            // Storage quota warning (non-blocking)
-          }
-          showToast('Photo loaded into preview!');
-        };
-        reader.readAsDataURL(file);
-      }
-    }
-
-    // Show custom toast notification without alert()
     function showToast(message) {
       const toast = document.getElementById('toast');
       const toastText = document.getElementById('toast-text');
@@ -1423,18 +1595,15 @@ Status: Draft | Owner: Bruna Marques
       }, 2600);
     }
 
-    // Toggle navigation between sections and synchronize browser URL for GitHub Pages
     function navigateTo(route, event) {
       if (event) {
         event.preventDefault();
       }
 
-      // Fallback to home if unknown route
       if (!VALID_ROUTES.includes(route)) {
         route = 'home';
       }
 
-      // Hide all sections
       VALID_ROUTES.forEach(r => {
         const el = document.getElementById(`section-${r}`);
         if (el) {
@@ -1443,17 +1612,14 @@ Status: Draft | Owner: Bruna Marques
         }
       });
 
-      // Show current section
       const activeEl = document.getElementById(`section-${route}`);
       if (activeEl) {
         activeEl.classList.remove('hidden');
         activeEl.classList.add('block');
       }
 
-      // Update Desktop Navbar Pills active state
       document.querySelectorAll('.nav-pill').forEach(pill => {
         const pillRoute = pill.getAttribute('data-nav');
-        // Keep Projects pill active if currently viewing any case study subpage
         const isProjectsSubroute = route.startsWith('project-') && pillRoute === 'projects';
         if (pillRoute === route || isProjectsSubroute) {
           pill.className = "nav-pill px-4 py-1.5 text-[15px] font-medium rounded-full transition-all duration-200 bg-[#FEE5E0] text-[#B85D4D] shadow-sm";
@@ -1462,7 +1628,6 @@ Status: Draft | Owner: Bruna Marques
         }
       });
 
-      // Update Mobile Links
       document.querySelectorAll('.mobile-nav-link').forEach(link => {
         const linkRoute = link.getAttribute('data-nav');
         const isProjectsSubroute = route.startsWith('project-') && linkRoute === 'projects';
@@ -1473,22 +1638,18 @@ Status: Draft | Owner: Bruna Marques
         }
       });
 
-      // Update Browser URL so users can copy direct links (e.g. /#about or direct hash)
       if (window.location.hash !== `#${route}`) {
         window.history.pushState({ route: route }, `Bruna Marques da Silva - ${route}`, `#${route}`);
       }
 
-      // Scroll smoothly to top of view
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Handle back/forward navigation in the browser
     window.addEventListener('popstate', (e) => {
       const hash = window.location.hash.replace('#', '') || 'home';
       navigateTo(hash);
     });
 
-    // Mobile menu toggle
     function toggleMobileMenu() {
       const menu = document.getElementById('mobile-menu');
       const icon = document.getElementById('hamburger-icon');
@@ -1505,7 +1666,6 @@ Status: Draft | Owner: Bruna Marques
       }
     }
 
-    // Copy Email to clipboard with fallback
     function copyEmailToClipboard() {
       const email = 'brumars74@hotmail.com';
       const tempInput = document.createElement('input');
@@ -1517,7 +1677,6 @@ Status: Draft | Owner: Bruna Marques
       showToast('Email (brumars74@hotmail.com) copied to clipboard!');
     }
 
-    // Share link handler
     function copyLinkToShare(title) {
       const url = window.location.href;
       const tempInput = document.createElement('input');
@@ -1530,265 +1689,144 @@ Status: Draft | Owner: Bruna Marques
     }
 
     // ==========================================
-    // CARD HAND GALLERY (FAN COMPONENT) LOGIC
+    // SEAMLESS DUAL-LAYER CARD GALLERY (ABOUT ME)
     // ==========================================
-    const fanCardsData = [
-      {
-        id: "architecture",
-        src: "1000084172.jpg",
-        title: "Architecture & Wandering",
-        description: "Capturing quiet moments through the trees in historic architecture, framed by golden natural greenery."
-      },
-      {
-        id: "harbour",
-        src: "1000084983.jpg",
-        title: "Open Air Walks",
-        description: "Golden autumn light along the harbour walk, watching reflections dance on the waterfront."
-      },
-      {
-        id: "watercolour",
-        src: "1000086032.jpg",
-        title: "Botanical Watercolour",
-        description: "Handcrafted watercolour botanical florals on cold-pressed paper, bringing quiet focus to my weekends."
-      },
-      {
-        id: "wanderlust",
-        src: "1000086033.jpg",
-        title: "Wanderlust Hoop",
-        description: "Handmade embroidery hoop displaying pin badges collected across trips, journeys, and milestone cities."
-      },
-      {
-        id: "amora",
-        src: "1000065140.jpg",
-        title: "Amora",
-        description: "Amora resting comfortably on her blanket — my loyal companion and constant joy away from screens."
-      },
-      {
-        id: "coast",
-        src: "1000072968.jpg",
-        title: "Mediterranean Cliffs",
-        description: "A natural sea arch over turquoise waters, framed by wild coastal herbs during Mediterranean travels."
-      }
+    const galleryThemeImages = [
+      "1000086032.jpg", // Dot 0: Pink (Watercolour Painting)
+      "1000084983.jpg", // Dot 1: Sage (Bristol Harbour Walk)
+      "1000086033.jpg", // Dot 2: Terracotta (Wanderlust Embroidery)
+      "1000084172.jpg", // Dot 3: Warm Ochre (Architecture & Trees)
+      "1000072968.jpg", // Dot 4: Ocean Blue (Mediterranean Arch)
+      "1000065140.jpg"  // Dot 5: Lavender Slate (Amora Dog)
     ];
 
-    let fanActiveId = fanCardsData[0].id;
-    let fanHoveredId = null;
-    let fanBaseCardWidth = 200;
-    let lastRenderedStageWidth = 0;
-    let fanResizeRaf = null;
-    const HAND_SCALE = 0.72;
-
-    function initCardHandGallery() {
-      const stage = document.getElementById('fan-stage');
-      if (!stage) return;
-
-      renderCardHandGallery();
-
-      // Recalculate on container resize with requestAnimationFrame guard to eliminate ResizeObserver loop warnings
-      if (window.ResizeObserver) {
-        const ro = new ResizeObserver((entries) => {
-          if (!entries || !entries.length) return;
-          const currentWidth = Math.round(entries[0].contentRect.width);
-          // Only re-render if the container's width genuinely changed
-          if (currentWidth === lastRenderedStageWidth) return;
-
-          if (fanResizeRaf) {
-            cancelAnimationFrame(fanResizeRaf);
-          }
-          fanResizeRaf = window.requestAnimationFrame(() => {
-            renderCardHandGallery();
-          });
-        });
-        ro.observe(stage);
-      } else {
-        window.addEventListener('resize', () => {
-          if (fanResizeRaf) {
-            cancelAnimationFrame(fanResizeRaf);
-          }
-          fanResizeRaf = window.requestAnimationFrame(() => {
-            renderCardHandGallery();
-          });
-        });
-      }
-    }
-
-    function calculateFanTransform(index, count, spacing) {
-      const offset = index - (count - 1) / 2;
-      const stepDeg = count > 1 ? Math.min(9, 46 / (count - 1)) : 0;
-      const rotate = offset * stepDeg;
-      return {
-        rotate,
-        x: offset * spacing,
-        y: Math.abs(rotate) * 1.9
-      };
-    }
-
-    function selectFanCard(cardId) {
-      if (fanActiveId === cardId) return;
-      fanActiveId = cardId;
-      fanHoveredId = null;
-      renderCardHandGallery();
-    }
-
-    function setFanHover(cardId) {
-      if (fanActiveId === cardId) return;
-      fanHoveredId = cardId;
-      renderCardHandGallery();
-    }
-
-    function clearFanHover(cardId) {
-      if (fanHoveredId === cardId) {
-        fanHoveredId = null;
-        renderCardHandGallery();
-      }
-    }
-
-    function renderCardHandGallery() {
-      const stage = document.getElementById('fan-stage');
-      if (!stage) return;
-
-      const stageWidth = Math.round(stage.clientWidth || 500);
-      lastRenderedStageWidth = stageWidth;
-      const cardWidth = Math.min(fanBaseCardWidth, stageWidth * 0.48);
-      const cardHeight = cardWidth * 1.4; // 5:7 aspect ratio
-      const baseBottom = cardHeight * 0.12;
-      const hoverLift = cardHeight * 0.32;
-      const activeLift = cardHeight * 0.60;
-
-      // Ensure stage height fits the tallest lifted card
-      stage.style.minHeight = `${cardHeight * 1.76}px`;
-
-      // Cards sitting back in the hand
-      const handCards = fanCardsData.filter(c => c.id !== fanActiveId);
-      const hoveredIndex = fanHoveredId ? handCards.findIndex(c => c.id === fanHoveredId) : -1;
-
-      const maxOffset = (handCards.length - 1) / 2;
-      const halfAvailable = stageWidth / 2 - cardWidth * 0.45;
-      const fanSpacing = maxOffset > 0
-        ? Math.min(
-            cardWidth * (handCards.length > 5 ? 0.42 : 0.50),
-            Math.max(cardWidth * 0.22, halfAvailable / maxOffset)
-          )
-        : 0;
-
-      // Render cards into stage
-      stage.innerHTML = '';
-
-      fanCardsData.forEach(card => {
-        const isActive = card.id === fanActiveId;
-        const handIndex = handCards.findIndex(c => c.id === card.id);
-
-        let slotRotate = 0;
-        let slotScale = 1;
-        let slotX = 0;
-        let slotY = 0;
-        let zIndex = 10;
-
-        let liftRotate = 0;
-        let liftScale = 1;
-        let liftX = 0;
-        let liftY = 0;
-
-        if (isActive) {
-          slotRotate = 0;
-          slotScale = 1;
-          slotX = 0;
-          slotY = -activeLift;
-          zIndex = 100;
-        } else {
-          const fan = calculateFanTransform(handIndex, handCards.length, fanSpacing);
-          const isHovered = card.id === fanHoveredId;
-
-          const neighborShift = hoveredIndex !== -1 && !isHovered
-            ? (Math.sign(handIndex - hoveredIndex) * cardWidth * 0.14) / Math.max(1, Math.abs(handIndex - hoveredIndex))
-            : 0;
-
-          const dx = neighborShift;
-          const dy = isHovered ? -hoverLift - fan.y : 0;
-          const rad = (-fan.rotate * Math.PI) / 180;
-
-          slotRotate = fan.rotate;
-          slotScale = HAND_SCALE;
-          slotX = fan.x;
-          slotY = fan.y;
-
-          liftRotate = isHovered ? -fan.rotate * 0.45 : 0;
-          liftScale = isHovered ? 1.08 : 1;
-          liftX = (dx * Math.cos(rad) - dy * Math.sin(rad)) / HAND_SCALE;
-          liftY = (dx * Math.sin(rad) + dy * Math.cos(rad)) / HAND_SCALE;
-          zIndex = isHovered ? 60 : 10 + handIndex;
-        }
-
-        // Slot wrapper
-        const slotEl = document.createElement('div');
-        slotEl.className = 'absolute left-1/2 cursor-pointer transition-all duration-300 ease-out';
-        slotEl.style.bottom = `${baseBottom}px`;
-        slotEl.style.marginLeft = `-${cardWidth / 2}px`;
-        slotEl.style.zIndex = zIndex;
-        slotEl.style.transform = `translate3d(${slotX}px, ${slotY}px, 0) rotate(${slotRotate}deg) scale(${slotScale})`;
-
-        // Lift wrapper
-        const liftEl = document.createElement('div');
-        liftEl.className = 'transition-all duration-300 ease-out';
-        liftEl.style.transform = `translate3d(${liftX}px, ${liftY}px, 0) rotate(${liftRotate}deg) scale(${liftScale})`;
-
-        // Card button
-        const btnEl = document.createElement('button');
-        btnEl.type = 'button';
-        btnEl.setAttribute('aria-label', card.title);
-        btnEl.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-        btnEl.className = `block rounded-2xl focus:outline-none transition-shadow duration-300 ${
-          isActive 
-            ? 'cursor-default ring-2 ring-[#4B4D82]/30 shadow-2xl' 
-            : 'cursor-pointer hover:shadow-xl'
-        }`;
-
-        // Card Image
-        const imgEl = document.createElement('img');
-        imgEl.src = card.src;
-        imgEl.alt = card.title;
-        imgEl.className = 'aspect-[5/7] rounded-2xl border-2 border-white/90 bg-[#EDE8DE] object-cover shadow-lg select-none pointer-events-none';
-        imgEl.style.width = `${cardWidth}px`;
-        imgEl.onerror = () => handleGalleryFallback(imgEl, card.title, card.src);
-
-        // Interaction events
-        slotEl.onmouseenter = () => setFanHover(card.id);
-        slotEl.onmouseleave = () => clearFanHover(card.id);
-        btnEl.onclick = (e) => {
-          e.stopPropagation();
-          selectFanCard(card.id);
-        };
-
-        // Touch drag swipe on mobile
-        let touchStartY = 0;
-        btnEl.ontouchstart = (e) => {
-          touchStartY = e.touches[0].clientY;
-        };
-        btnEl.ontouchend = (e) => {
-          const touchEndY = e.changedTouches[0].clientY;
-          if (touchStartY - touchEndY > 30) {
-            selectFanCard(card.id);
-          }
-        };
-
-        btnEl.appendChild(imgEl);
-        liftEl.appendChild(btnEl);
-        slotEl.appendChild(liftEl);
-        stage.appendChild(slotEl);
+    function preloadAllGalleryImages() {
+      galleryThemeImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
       });
     }
 
-    // Elegant fallback handler if images are not yet deployed in root folder
-    function handleGalleryFallback(imgElement, caption, filename) {
-      const svg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23FBF8F3"/><stop offset="50%" stop-color="%23F4EFE6"/><stop offset="100%" stop-color="%23EBE4D8"/></linearGradient></defs><rect width="800" height="600" fill="url(%23g)"/><circle cx="400" cy="270" r="48" fill="%234B4D82" opacity="0.12"/><path d="M380 270 L395 285 L420 255" stroke="%234B4D82" stroke-width="4" stroke-linecap="round" fill="none"/><text x="400" y="360" font-family="Playfair Display, Georgia, serif" font-size="24" fill="%23222B45" text-anchor="middle" font-weight="600">${caption}</text><text x="400" y="395" font-family="Inter, sans-serif" font-size="13" fill="%23626B7F" text-anchor="middle">${filename}</text></svg>`;
+    let currentSelectedDot = 0;
+    let activeLayerIsA = true;
+
+    function selectGalleryTheme(index) {
+      if (index === currentSelectedDot) return;
+      currentSelectedDot = index;
+
+      const targetSrc = galleryThemeImages[index];
+      if (!targetSrc) return;
+
+      const layerA = document.getElementById('gallery-card-layer-a');
+      const layerB = document.getElementById('gallery-card-layer-b');
+      if (!layerA || !layerB) return;
+
+      if (activeLayerIsA) {
+        layerB.src = targetSrc;
+        layerB.classList.remove('opacity-0', 'pointer-events-none');
+        layerB.classList.add('opacity-100');
+
+        layerA.classList.remove('opacity-100');
+        layerA.classList.add('opacity-0', 'pointer-events-none');
+        activeLayerIsA = false;
+      } else {
+        layerA.src = targetSrc;
+        layerA.classList.remove('opacity-0', 'pointer-events-none');
+        layerA.classList.add('opacity-100');
+
+        layerB.classList.remove('opacity-100');
+        layerB.classList.add('opacity-0', 'pointer-events-none');
+        activeLayerIsA = true;
+      }
+
+      for (let i = 0; i < galleryThemeImages.length; i++) {
+        const ring = document.getElementById(`dot-ring-${i}`);
+        if (ring) {
+          if (i === index) {
+            ring.classList.remove('hidden');
+          } else {
+            ring.classList.add('hidden');
+          }
+        }
+      }
+    }
+
+    function handleGalleryCardFallback(imgElement) {
+      const svg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600"><rect width="600" height="600" fill="%23F7F4EE"/><circle cx="300" cy="270" r="48" fill="%234B4D82" opacity="0.12"/><path d="M280 270 L295 285 L320 255" stroke="%234B4D82" stroke-width="4" stroke-linecap="round" fill="none"/><text x="300" y="360" font-family="Playfair Display, Georgia, serif" font-size="22" fill="%23222B45" text-anchor="middle" font-weight="600">Personal Photo</text></svg>`;
       imgElement.src = svg;
     }
 
-    // Initialize application and parse incoming URL hash
+    // ==========================================
+    // MANAGER SKILLS ASSESSMENT CAROUSEL LOGIC
+    // ==========================================
+    const msaThemeImages = [
+      "Gemini_Generated_Image_a3s9a3s9a3s9a3s9.jpeg", // Dot 0: Teal (Mindtools Hero Banner)
+      "Gemini_Generated_Image_3yolxz3yolxz3yol.jpeg", // Dot 1: Purple (Management Insights Spider Graph)
+      "Gemini_Generated_Image_s40l2ls40l2ls40l.jpeg"  // Dot 2: Magenta (Emotional Intelligence Scoring)
+    ];
+
+    function preloadMsaImages() {
+      msaThemeImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+    }
+
+    let currentMsaDot = 0;
+    let msaActiveLayerIsA = true;
+
+    function selectMsaTheme(index) {
+      if (index === currentMsaDot) return;
+      currentMsaDot = index;
+
+      const targetSrc = msaThemeImages[index];
+      if (!targetSrc) return;
+
+      const layerA = document.getElementById('msa-carousel-layer-a');
+      const layerB = document.getElementById('msa-carousel-layer-b');
+      if (!layerA || !layerB) return;
+
+      if (msaActiveLayerIsA) {
+        layerB.src = targetSrc;
+        layerB.classList.remove('opacity-0', 'pointer-events-none');
+        layerB.classList.add('opacity-100');
+
+        layerA.classList.remove('opacity-100');
+        layerA.classList.add('opacity-0', 'pointer-events-none');
+        msaActiveLayerIsA = false;
+      } else {
+        layerA.src = targetSrc;
+        layerA.classList.remove('opacity-0', 'pointer-events-none');
+        layerA.classList.add('opacity-100');
+
+        layerB.classList.remove('opacity-100');
+        layerB.classList.add('opacity-0', 'pointer-events-none');
+        msaActiveLayerIsA = true;
+      }
+
+      for (let i = 0; i < msaThemeImages.length; i++) {
+        const ring = document.getElementById(`msa-dot-ring-${i}`);
+        if (ring) {
+          if (i === index) {
+            ring.classList.remove('hidden');
+          } else {
+            ring.classList.add('hidden');
+          }
+        }
+      }
+    }
+
+    function handleMsaCarouselFallback(imgElement) {
+      const svg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500"><rect width="800" height="500" fill="%23F7F4EE"/><text x="400" y="250" font-family="Playfair Display, Georgia, serif" font-size="24" fill="%23222B45" text-anchor="middle" font-weight="600">Product Interface Preview</text></svg>`;
+      imgElement.src = svg;
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
+      preloadAllGalleryImages();
+      preloadMsaImages();
+
       let initialRoute = window.location.hash.replace('#', '');
       
-      // Also support direct path if deployed to subpath
       if (!initialRoute) {
         const pathSegments = window.location.pathname.split('/').filter(Boolean);
         const lastSegment = pathSegments[pathSegments.length - 1];
@@ -1802,7 +1840,6 @@ Status: Draft | Owner: Bruna Marques
       }
 
       navigateTo(initialRoute);
-      initCardHandGallery();
     });
   </script>
 </body>
