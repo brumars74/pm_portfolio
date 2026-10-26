@@ -2157,10 +2157,11 @@ Status: Draft | Owner: Bruna Marques
 
             <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
               <img 
-                src="Screenshot 2026-10-26 at 14.01.14.jpg" 
+                id="kudos-snc-lt-img"
+                src="Screenshot 2026-10-26 at 14.01.14.png" 
                 alt="Satpal Kaur - SNC LT meeting update praise" 
                 class="w-full h-auto object-contain select-none"
-                onerror="this.onerror=null;"
+                onerror="handleSatpalLtFallback(this)"
               />
             </div>
           </div>
@@ -2258,6 +2259,22 @@ Status: Draft | Owner: Bruna Marques
     function handleMentorshipPhotoFallback(imgElement) {
       const svg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360"><rect width="900" height="360" fill="%23FAFCFD"/><rect x="40" y="30" width="820" height="300" rx="16" fill="%23FFFFFF" stroke="%23E2E8F0" stroke-width="1.5"/><circle cx="450" cy="150" r="44" fill="%23FEE5E0"/><path d="M430 150 L445 165 L475 135" stroke="%23B85D4D" stroke-width="4" stroke-linecap="round" fill="none"/><text x="450" y="225" font-family="Playfair Display, Georgia, serif" font-size="20" fill="%23222B45" text-anchor="middle" font-weight="600">Mentorship Journey Photo</text><text x="450" y="255" font-family="Inter, sans-serif" font-size="13" fill="%23626B7F" text-anchor="middle">Empowering through shared learning and mutual guidance</text></svg>`;
       imgElement.src = svg;
+    }
+
+    function handleSatpalLtFallback(imgElement) {
+      const candidates = [
+        'Screenshot 2026-10-26 at 14.01.14.jpg',
+        'Screenshot 2026-10-26 at 14.01.14.jpeg',
+        'Screenshot 2026-10-26 at 14.01.14_2.jpg',
+        'Screenshot 2026-10-26 at 14.01.14_2.png'
+      ];
+      const attempt = parseInt(imgElement.dataset.attempt || '0', 10);
+      if (attempt < candidates.length) {
+        imgElement.dataset.attempt = attempt + 1;
+        imgElement.src = candidates[attempt];
+      } else {
+        imgElement.onerror = null;
+      }
     }
 
     function showToast(message) {
