@@ -2091,31 +2091,28 @@ Status: Draft | Owner: Bruna Marques
           <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold">E.ON NEXT RECOGNITION</span>
         </div>
 
-        <!-- 1. Manager Indicative Review Card (Full Width Highlight) -->
-        <div class="aquarel-card rounded-3xl p-5 sm:p-7 space-y-4 border border-white shadow-sm">
-          <div class="flex items-center justify-between border-b border-gray-100 pb-3">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/60">Manager Review</span>
-              <span class="text-xs font-mono text-brand-subtle uppercase">Performance Assessment</span>
+        <!-- Masonry Pinterest-style multi-column layout: cards hug their natural height with zero vertical stretching -->
+        <div class="columns-1 md:columns-2 gap-6 space-y-6">
+
+          <!-- Card 1: Manager Indicative Review (Wide horizontal banner) -->
+          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Manager Review</span>
+              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Performance Assessment</span>
             </div>
-            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800">Rating: Achieved</span>
+
+            <div class="w-full rounded-2xl overflow-hidden border border-gray-200/80 bg-white shadow-xs p-1">
+              <img 
+                src="Screenshot 2026-10-26 at 14.03.51.png" 
+                alt="Manager Performance Indicative Rating - Achieved" 
+                class="w-full h-auto object-contain select-none"
+                onerror="this.onerror=null;"
+              />
+            </div>
           </div>
 
-          <div class="w-full rounded-2xl overflow-hidden border border-gray-200/80 bg-white shadow-xs p-1">
-            <img 
-              src="Screenshot 2026-10-26 at 14.03.51.png" 
-              alt="Manager Performance Indicative Rating - Achieved" 
-              class="w-full h-auto object-contain select-none"
-              onerror="this.onerror=null;"
-            />
-          </div>
-        </div>
-
-        <!-- 2. The 3 Portrait E-Cards in a Balanced 3-Column Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
-
-          <!-- Card A: Aija Gremzde (Pre-elaboration & DMS Story) -->
-          <div class="aquarel-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between border border-white shadow-sm space-y-3">
+          <!-- Card 2: Aija Gremzde (Portrait E-Card) -->
+          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
             <div class="flex items-center justify-between border-b border-gray-100 pb-2">
               <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">DMS Journey</span>
               <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-rose-50 text-brand-pillText font-medium">Pre-elaboration</span>
@@ -2131,8 +2128,8 @@ Status: Draft | Owner: Bruna Marques
             </div>
           </div>
 
-          <!-- Card B: Satpal Kaur (Tech Deliveries & Multi-deadlines) -->
-          <div class="aquarel-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between border border-white shadow-sm space-y-3">
+          <!-- Card 3: Satpal Kaur - SNC Tech Deliveries (Portrait E-Card) -->
+          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
             <div class="flex items-center justify-between border-b border-gray-100 pb-2">
               <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">SNC Tech Deliveries</span>
               <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-indigo-50 text-brand-accent font-medium">Delivery & Alignment</span>
@@ -2148,8 +2145,25 @@ Status: Draft | Owner: Bruna Marques
             </div>
           </div>
 
-          <!-- Card C: Satpal Kaur (Leadership Team Meeting) -->
-          <div class="aquarel-card rounded-3xl p-5 sm:p-6 flex flex-col justify-between border border-white shadow-sm space-y-3">
+          <!-- Card 4: Ahmed Korkosawi (Compact validation message) -->
+          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Validation Session</span>
+              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-800 font-medium">Process Clarity</span>
+            </div>
+
+            <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
+              <img 
+                src="Screenshot 2026-10-26 at 13.58.34.png" 
+                alt="Ahmed Korkosawi - Validation session clarity" 
+                class="w-full h-auto object-contain select-none"
+                onerror="this.onerror=null;"
+              />
+            </div>
+          </div>
+
+          <!-- Card 5: Satpal Kaur - SNC LT Meeting (Portrait E-Card) -->
+          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
             <div class="flex items-center justify-between border-b border-gray-100 pb-2">
               <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">SNC LT Meeting</span>
               <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Strategic Update</span>
@@ -2167,27 +2181,6 @@ Status: Draft | Owner: Bruna Marques
           </div>
 
         </div>
-
-        <!-- 3. Bottom Focused Card: Ahmed Korkosawi (Validation Session) -->
-        <div class="aquarel-card rounded-3xl p-5 sm:p-7 space-y-3 border border-white shadow-sm pt-2">
-          <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-            <div class="flex items-center gap-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Validation Session</span>
-              <span class="text-xs text-brand-subtle font-normal">• Facilitation & Problem Solving</span>
-            </div>
-            <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-800 font-medium">Process Clarity</span>
-          </div>
-
-          <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1 flex justify-center">
-            <img 
-              src="Screenshot 2026-10-26 at 13.58.34.png" 
-              alt="Ahmed Korkosawi - Validation session clarity" 
-              class="w-full h-auto object-contain select-none"
-              onerror="this.onerror=null;"
-            />
-          </div>
-        </div>
-
       </div>
 
       <!-- LINKEDIN RECOMMENDATIONS CALL-TO-ACTION BANNER -->
