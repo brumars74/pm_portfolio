@@ -2086,101 +2086,118 @@ Status: Draft | Owner: Bruna Marques
       </div>
 
       <!-- E.ON NEXT RECOGNITION SECTION -->
-      <div class="space-y-6 pt-2">
+      <div class="space-y-8 pt-2">
         <div class="border-b border-gray-200/80 pb-2">
           <span class="text-xs font-mono uppercase tracking-wider text-brand-subtle font-semibold">E.ON NEXT RECOGNITION</span>
         </div>
 
-        <!-- Masonry Pinterest-style multi-column layout: cards hug their natural height with zero vertical stretching -->
-        <div class="columns-1 md:columns-2 gap-6 space-y-6">
-
-          <!-- Card 1: Manager Indicative Review (Wide horizontal banner) -->
-          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
-            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Manager Review</span>
-              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Performance Assessment</span>
-            </div>
-
-            <div class="w-full rounded-2xl overflow-hidden border border-gray-200/80 bg-white shadow-xs p-1">
-              <img 
-                src="Screenshot 2026-10-26 at 14.03.51.png" 
-                alt="Manager Performance Indicative Rating - Achieved" 
-                class="w-full h-auto object-contain select-none"
-                onerror="this.onerror=null;"
-              />
-            </div>
+        <!-- 1. Manager Indicative Review (Top Wide Banner) -->
+        <div class="aquarel-card rounded-3xl p-5 sm:p-7 space-y-3 border border-white shadow-sm">
+          <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+            <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Manager Review</span>
+            <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Performance Assessment</span>
           </div>
 
-          <!-- Card 2: Aija Gremzde (Portrait E-Card) -->
-          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
-            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">DMS Journey</span>
-              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-rose-50 text-brand-pillText font-medium">Pre-elaboration</span>
-            </div>
-
-            <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
-              <img 
-                src="Screenshot 2026-10-26 at 14.00.32.png" 
-                alt="Aija Gremzde - Pre-elaboration emails praise" 
-                class="w-full h-auto object-contain select-none"
-                onerror="this.onerror=null;"
-              />
-            </div>
+          <div class="w-full rounded-2xl overflow-hidden border border-gray-200/80 bg-white shadow-xs p-1 sm:p-2">
+            <img 
+              src="Screenshot 2026-10-26 at 14.03.51.png" 
+              alt="Manager Performance Indicative Rating - Achieved" 
+              class="w-full h-auto object-contain select-none"
+              onerror="this.onerror=null;"
+            />
           </div>
+        </div>
 
-          <!-- Card 3: Satpal Kaur - SNC Tech Deliveries (Portrait E-Card) -->
-          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
-            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">SNC Tech Deliveries</span>
-              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-indigo-50 text-brand-accent font-medium">Delivery & Alignment</span>
+        <!-- 2. Interactive Carousel for the 3 Portrait E-Cards (Large & Legible) -->
+        <div class="aquarel-card rounded-3xl p-6 sm:p-9 border border-white shadow-sm flex flex-col items-center">
+          <div class="w-full max-w-md sm:max-w-lg flex flex-col items-center">
+            
+            <!-- Dynamic Category and Context Label -->
+            <div class="w-full flex items-center justify-between border-b border-gray-100 pb-3 mb-4">
+              <span id="eon-carousel-topic" class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">SNC LT Meeting</span>
+              <span id="eon-carousel-badge" class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Strategic Update</span>
             </div>
 
-            <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
+            <!-- Large Portrait Frame with Dual-Layer Cross-Fade -->
+            <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-white border border-gray-200/90 shadow-sm p-1.5 sm:p-2">
+              <!-- Layer A -->
               <img 
-                src="Screenshot 2026-10-26 at 14.00.57.png" 
-                alt="Satpal Kaur - Managing deadlines and transparency" 
-                class="w-full h-auto object-contain select-none"
-                onerror="this.onerror=null;"
-              />
-            </div>
-          </div>
-
-          <!-- Card 4: Ahmed Korkosawi (Compact validation message) -->
-          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
-            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Validation Session</span>
-              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-800 font-medium">Process Clarity</span>
-            </div>
-
-            <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
-              <img 
-                src="Screenshot 2026-10-26 at 13.58.34.png" 
-                alt="Ahmed Korkosawi - Validation session clarity" 
-                class="w-full h-auto object-contain select-none"
-                onerror="this.onerror=null;"
-              />
-            </div>
-          </div>
-
-          <!-- Card 5: Satpal Kaur - SNC LT Meeting (Portrait E-Card) -->
-          <div class="break-inside-avoid aquarel-card rounded-3xl p-5 sm:p-6 space-y-3 border border-white shadow-sm">
-            <div class="flex items-center justify-between border-b border-gray-100 pb-2">
-              <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">SNC LT Meeting</span>
-              <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-medium">Strategic Update</span>
-            </div>
-
-            <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-1">
-              <img 
-                id="kudos-snc-lt-img"
+                id="eon-carousel-layer-a"
                 src="Screenshot 2026-10-26 at 14.01.14.png" 
-                alt="Satpal Kaur - SNC LT meeting update praise" 
-                class="w-full h-auto object-contain select-none"
+                alt="Satpal Kaur - SNC LT meeting update praise"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-500 opacity-100 select-none p-1"
                 onerror="handleSatpalLtFallback(this)"
               />
+              
+              <!-- Layer B -->
+              <img 
+                id="eon-carousel-layer-b"
+                src="Screenshot 2026-10-26 at 14.00.32.png" 
+                alt="E.ON Next Feedback Card"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-500 opacity-0 pointer-events-none select-none p-1"
+                onerror="this.onerror=null;"
+              />
             </div>
+
+            <!-- Color Palette Dots Controller -->
+            <div class="mt-5 flex items-center justify-center gap-3">
+              <!-- Dot 0: Pink/Cyan Floral (Satpal Kaur SNC LT Meeting) -->
+              <button 
+                type="button" 
+                onclick="selectEonCard(0)" 
+                onmouseenter="selectEonCard(0)"
+                aria-label="Satpal Kaur SNC LT Meeting"
+                class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #E2A7B0;"
+              >
+                <span id="eon-dot-ring-0" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200"></span>
+              </button>
+
+              <!-- Dot 1: Coral Red (Aija Gremzde DMS Journey) -->
+              <button 
+                type="button" 
+                onclick="selectEonCard(1)" 
+                onmouseenter="selectEonCard(1)"
+                aria-label="Aija Gremzde DMS Journey"
+                class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #E65A4B;"
+              >
+                <span id="eon-dot-ring-1" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+
+              <!-- Dot 2: Bright Orange Red (Satpal Kaur SNC Tech Deliveries) -->
+              <button 
+                type="button" 
+                onclick="selectEonCard(2)" 
+                onmouseenter="selectEonCard(2)"
+                aria-label="Satpal Kaur SNC Tech Deliveries"
+                class="relative w-5 h-5 rounded-full transition-transform hover:scale-110 focus:outline-none"
+                style="background-color: #8C88B0;"
+              >
+                <span id="eon-dot-ring-2" class="absolute -inset-1 rounded-full border-2 border-[#4B4D82] transition-all duration-200 hidden"></span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3. Validation Session (Bottom Horizontal Message Card) -->
+        <div class="aquarel-card rounded-3xl p-5 sm:p-7 space-y-3 border border-white shadow-sm">
+          <div class="flex items-center justify-between border-b border-gray-100 pb-2.5">
+            <span class="text-xs font-mono uppercase tracking-wider text-brand-accent font-semibold">Validation Session</span>
+            <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-800 font-medium">Process Clarity</span>
           </div>
 
+          <div class="w-full rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-xs p-2 sm:p-3">
+            <img 
+              src="Screenshot 2026-10-26 at 13.58.34.png" 
+              alt="Ahmed Korkosawi - Validation session clarity" 
+              class="w-full h-auto object-contain select-none max-h-36 mx-auto"
+              onerror="this.onerror=null;"
+            />
+          </div>
         </div>
+
       </div>
 
       <!-- LINKEDIN RECOMMENDATIONS CALL-TO-ACTION BANNER -->
@@ -2271,6 +2288,103 @@ Status: Draft | Owner: Bruna Marques
         imgElement.src = candidates[attempt];
       } else {
         imgElement.onerror = null;
+      }
+    }
+
+    // ==========================================
+    // E.ON RECOGNITION CAROUSEL LOGIC
+    // ==========================================
+    const eonCards = [
+      {
+        src: "Screenshot 2026-10-26 at 14.01.14.png",
+        topic: "SNC LT Meeting",
+        badge: "Strategic Update",
+        badgeClass: "bg-emerald-50 text-emerald-800"
+      },
+      {
+        src: "Screenshot 2026-10-26 at 14.00.32.png",
+        topic: "DMS Journey",
+        badge: "Pre-elaboration Clarity",
+        badgeClass: "bg-rose-50 text-brand-pillText"
+      },
+      {
+        src: "Screenshot 2026-10-26 at 14.00.57.png",
+        topic: "SNC Tech Deliveries",
+        badge: "Deadlines & Collaboration",
+        badgeClass: "bg-indigo-50 text-brand-accent"
+      }
+    ];
+
+    function preloadEonImages() {
+      eonCards.forEach(card => {
+        const img = new Image();
+        img.src = card.src;
+      });
+    }
+
+    let currentEonCard = 0;
+    let eonActiveLayerIsA = true;
+
+    function selectEonCard(index) {
+      if (index === currentEonCard) return;
+      currentEonCard = index;
+
+      const card = eonCards[index];
+      if (!card) return;
+
+      // Update topic and badge pill
+      const topicEl = document.getElementById('eon-carousel-topic');
+      const badgeEl = document.getElementById('eon-carousel-badge');
+
+      if (topicEl) topicEl.textContent = card.topic;
+      if (badgeEl) {
+        badgeEl.textContent = card.badge;
+        badgeEl.className = `text-[11px] px-2.5 py-0.5 rounded-full font-medium ${card.badgeClass}`;
+      }
+
+      // Smooth cross-fade between Layer A and Layer B
+      const layerA = document.getElementById('eon-carousel-layer-a');
+      const layerB = document.getElementById('eon-carousel-layer-b');
+      if (!layerA || !layerB) return;
+
+      if (eonActiveLayerIsA) {
+        layerB.src = card.src;
+        if (index === 0) {
+          layerB.onerror = () => handleSatpalLtFallback(layerB);
+        } else {
+          layerB.onerror = null;
+        }
+        layerB.classList.remove('opacity-0', 'pointer-events-none');
+        layerB.classList.add('opacity-100');
+
+        layerA.classList.remove('opacity-100');
+        layerA.classList.add('opacity-0', 'pointer-events-none');
+        eonActiveLayerIsA = false;
+      } else {
+        layerA.src = card.src;
+        if (index === 0) {
+          layerA.onerror = () => handleSatpalLtFallback(layerA);
+        } else {
+          layerA.onerror = null;
+        }
+        layerA.classList.remove('opacity-0', 'pointer-events-none');
+        layerA.classList.add('opacity-100');
+
+        layerB.classList.remove('opacity-100');
+        layerB.classList.add('opacity-0', 'pointer-events-none');
+        eonActiveLayerIsA = true;
+      }
+
+      // Update active ring on palette dots
+      for (let i = 0; i < eonCards.length; i++) {
+        const ring = document.getElementById(`eon-dot-ring-${i}`);
+        if (ring) {
+          if (i === index) {
+            ring.classList.remove('hidden');
+          } else {
+            ring.classList.add('hidden');
+          }
+        }
       }
     }
 
@@ -2518,6 +2632,7 @@ Status: Draft | Owner: Bruna Marques
     window.addEventListener('DOMContentLoaded', () => {
       preloadAllGalleryImages();
       preloadMsaImages();
+      preloadEonImages();
 
       let initialRoute = window.location.hash.replace('#', '');
       
